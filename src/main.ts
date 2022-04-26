@@ -11,6 +11,7 @@ import '@/styles/index.scss'; // global css
 import '@/permission'; // permission control 全局路由守卫
 import 'dayjs/locale/zh-cn'
 
+
 // 1、挂载vuex
 // 2、挂载路由
 // 3、挂载 elementPlus UI;

@@ -1,5 +1,5 @@
 const defaultSetting = {
-  title: 'VUE3-VITE-TEMPLATE',
+  title: '博客管理后台',
   /**
    * @type {boolean} true | false
    * @description whether fix the header

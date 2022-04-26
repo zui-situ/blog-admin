@@ -1,11 +1,3 @@
-/*
- * @Author: GeekQiaQia
- * @Date: 2021-11-10 10:32:27
- * @LastEditTime: 2021-11-29 13:19:01
- * @LastEditors: GeekQiaQia
- * @Description:
- * @FilePath: /vue3.0-template-admin/vite.config.ts
- */
 import { ConfigEnv ,loadEnv,UserConfig} from 'vite';
 import vue from '@vitejs/plugin-vue';
 import legacy from '@vitejs/plugin-legacy'
@@ -89,7 +81,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     optimizeDeps: {
       include: [
         'element-plus/lib/locale/lang/zh-cn',
-        'element-plus/lib/locale/lang/en'
+        'element-plus/lib/locale/lang/en',
       ]
     },
   }

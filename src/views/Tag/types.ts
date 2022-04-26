@@ -1,14 +1,11 @@
 export interface formTypes {
-  name:string
+  name:string,
+  icon:string,
+  cover:string
 }
 
 export interface stateTypes {
   tableData:Array<Object>,
-  page:{
-    pageNo:number,
-    pageSize: number,
-    total: number
-  },
   searchForm:{
     bindName: string,
     bindStatus: string,

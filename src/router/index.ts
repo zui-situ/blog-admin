@@ -155,12 +155,26 @@ export const constantRoutes: Array<RouteRecordRaw> = [
           icon: 'ic ic-document',
         },
       },
+      {
+        path: '/Article/articleAdd',
+        name: 'articleAdd',
+        component: () => import(/* @/views/Menu/menuManage.vueichText" */ '@/views/Article/articleAdd.vue'),
+        meta: {
+          title:{
+            '/zh-CN': '文章管理-新增',
+            '/en-US': 'Article Manage create'
+          },
+          icon: 'ic ic-document',
+          hidden:true,
+          keepAlive:true
+        },
+      },
     ],
   },
   {
-    path: '/label',
+    path: '/tag',
     component: layout,
-    redirect: '/Label/labelManage',
+    redirect: '/Tag/tagManage',
     meta: {
       title:{
         '/zh-CN': '标签管理',
@@ -170,13 +184,39 @@ export const constantRoutes: Array<RouteRecordRaw> = [
     },
     children: [
       {
-        path: '/Label/labelManage',
-        name: 'labelManage',
-        component: () => import(/* @/views/Menu/menuManage.vueichText" */ '@/views/Label/labelManage.vue'),
+        path: '/Tag/tagManage',
+        name: 'tagManage',
+        component: () => import(/* @/views/Menu/menuManage.vueichText" */ '@/views/Tag/tagManage.vue'),
         meta: {
           title:{
             '/zh-CN': '标签管理',
-            '/en-US': 'Label Manage'
+            '/en-US': 'Tag Manage'
+          },
+          icon: 'ic ic-label',
+        },
+      },
+    ],
+  },
+  {
+    path: '/category',
+    component: layout,
+    redirect: '/Category/categoryManage',
+    meta: {
+      title:{
+        '/zh-CN': '分类管理',
+        '/en-US': 'Category Manage'
+      },
+      icon: 'ic ic-label',
+    },
+    children: [
+      {
+        path: '/Category/categoryManage',
+        name: 'categoryManage',
+        component: () => import(/* @/views/Menu/menuManage.vueichText" */ '@/views/Category/categoryManage.vue'),
+        meta: {
+          title:{
+            '/zh-CN': '分类管理',
+            '/en-US': 'Category Manage'
           },
           icon: 'ic ic-label',
         },
