@@ -9,7 +9,7 @@ export const writeNewStyle = (stylesheetCount: number, originalStyle: string, co
       style.innerText = originalStyle
       document.head.appendChild(style)
     } else {
-      document.head.lastChild.innerText = originalStyle
+      // document.head.lastChild.innerText = originalStyle
     }
   }
 export default  writeNewStyle

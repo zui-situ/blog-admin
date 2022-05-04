@@ -2,7 +2,7 @@
 /* eslint-disable import/extensions */
 import { createApp } from 'vue';
 import ElementPlus from 'element-plus';
-import locale from 'element-plus/lib/locale/lang/zh-cn'
+import zhCn from 'element-plus/es/locale/lang/zh-cn'
 import {isPermission} from '@/directive/permission'
 import { key, store } from './store/index';
 import router from './router/index';
@@ -10,7 +10,8 @@ import App from './App.vue';
 import '@/styles/index.scss'; // global css
 import '@/permission'; // permission control 全局路由守卫
 import 'dayjs/locale/zh-cn'
-
+import 'element-plus/dist/index.css'
+// import 'element-plus/es/components/message/style/css'
 
 // 1、挂载vuex
 // 2、挂载路由
@@ -18,6 +19,9 @@ import 'dayjs/locale/zh-cn'
 
 // ElementPlus 样式通过CDN的方式引入来加样式文件，提高应用加载速度；
 import 'element-plus/theme-chalk/index.css';
+// If you want to use ElMessage, import it.
+import "element-plus/theme-chalk/src/message.scss"
+
 import '@/mock'
 
 // const roles =  localStorage.getItem('role');
@@ -30,7 +34,7 @@ import '@/mock'
 store.dispatch('permissionModule/getRoutes');
 
 // 链式注册插件
-const app = createApp(App).use(store, key).use(router).use(ElementPlus,{locale});
+const app = createApp(App).use(store, key).use(router).use(ElementPlus,{locale: zhCn});
 // 挂载全局方法 isPermission
 app.config.globalProperties.$isPermission=isPermission
 // 现在所有的导航都是异步的，等路由ready以后再进行挂载组件；

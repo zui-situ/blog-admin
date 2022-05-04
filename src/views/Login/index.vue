@@ -61,74 +61,69 @@ export default defineComponent({
 })
 </script>
 
-<style lang="stylus" scoped>
-.container{
+<style lang="scss" scoped>
+.container {
+  position: relative;
+  background-image: linear-gradient(90deg, #ebebeb, #f5f7f6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    background-image:linear-gradient(90deg, #ebebeb, #f5f7f6);
-    height: 100vh;
+  .login-container {
+    width: 874px;
+    min-width: 874px;
+    height: 78%;
+    min-height: 600px;
+    flex-direction: row;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 20px 5px rgba(34, 84, 142, 0.26);
 
-    .login-container{
-        width:874px;
-        min-width: 874px;
-        height: 78%;
-        min-height: 600px;
-        flex-direction: row;
+    .login-left {
+      width: 50%;
+      padding: 47px 54px;
+      img {
+        width: 90px;
+        height: 100px;
+        margin: 0px 20px;
+      }
+      .top {
         display: flex;
-        justify-content: space-evenly;
-        border-radius: 10px;
-        overflow: hidden;
-        background-color :white;
-        box-shadow:0 0 20px 5px rgba(34,84,142,.26);
-
-        .login-left{
-            width:50%;
-        padding:47px 54px;
-        img{
-            width: 90px;
-            height: 100px;
-            margin:0px 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 40px 0px;
+        .title {
+          font-size: 32px;
+          margin-bottom: 16px;
         }
-        .top{
-            display:flex;
-            flex-direction:column;
-            justify-content :flex-start;
-            align-items :flex-start;
-            margin:40px 0px;
-            .title{
-                font-size: 32px;
-                margin-bottom: 16px;
-
-            }
-            .desc{
-                font-size: 28px;
-                text-align: left;
-                color: rgb(166,175,188);
-            }
+        .desc {
+          font-size: 28px;
+          text-align: left;
+          color: rgb(166, 175, 188);
         }
-         .bottom{
-              .viteLogo{
-            transform :rotate(45deg)
+      }
+      .bottom {
+        .viteLogo {
+          transform: rotate(45deg);
         }
-        .vueLogo{
-            transform :rotate(-45deg)
+        .vueLogo {
+          transform: rotate(-45deg);
         }
-        }
-
-        }
-        .login-right{
-            width:50%;
-            display:flex;
-            flex-direction:column ;
-            justify-content: center;
-            align-items :center;
-            padding:30px;
-
-        }
+      }
     }
-
+    .login-right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+  }
 }
 </style>

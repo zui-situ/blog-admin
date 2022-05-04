@@ -1,7 +1,7 @@
-import { ElMessage } from 'element-plus/lib/components/message'
+import { ElMessage } from 'element-plus'
 
   function toFullScreen(){
-    const elem = document.body;
+    const elem:any = document.body;
     if(elem?.webkitRequestFullScreen){
       elem.webkitRequestFullScreen()
     }else if(elem?.mozRequestFullScreen){
@@ -18,7 +18,7 @@ import { ElMessage } from 'element-plus/lib/components/message'
   }
 
   function exitFullScreen(){
-    const elem = window.parent.document;
+    const elem:any = window.parent.document;
     if(elem?.webkitCancelFullScreen){
       elem.webkitCancelFullScreen()
     }else if(elem?.mozCancelFullScreen){

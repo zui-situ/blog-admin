@@ -21,6 +21,7 @@
     "@fullcalendar/interaction": "^5.8.0",
     "@fullcalendar/timegrid": "^5.8.0",
     "@fullcalendar/vue3": "^5.8.0",
+    "@rollup/plugin-alias": "^3.1.9",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@tinymce/tinymce-vue": "^4.0.0",
     "@toast-ui/editor": "^3.0.0",
@@ -47,7 +48,7 @@
     "dom-to-image": "^2.6.0",
     "driver.js": "^0.9.8",
     "echarts": "^5.1.1",
-    "element-plus": "^1.1.0-beta.7",
+    "element-plus": "^2.1.11",
     "esbuild": "^0.12.15",
     "eslint-import-resolver-webpack": "^0.13.0",
     "file-saver": "^2.0.5",
@@ -86,6 +87,8 @@
     "xlsx": "^0.17.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
     "@types/codemirror": "^5.60.0",
@@ -109,10 +112,17 @@
     "eslint-plugin-vue": "^7.9.0",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
+    "module-alias": "^2.2.2",
     "prettier": "^2.2.1",
     "stylus": "^0.54.8",
     "typescript": "^4.3.2",
+    "unplugin-auto-import": "^0.7.1",
+    "unplugin-vue-components": "^0.19.3",
     "vue-tsc": "^0.2.2"
+  },
+  "_moduleAliases": {
+    "@babel/standalone": "node_modules/@babel/core",
+    "babel-preset-env": "node_modules/@babel/preset-env"
   },
   "config": {
     "commitizen": {

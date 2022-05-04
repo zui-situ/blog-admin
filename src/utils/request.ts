@@ -1,5 +1,5 @@
 import Axios, { Method, ResponseType, AxiosResponse } from 'axios'
-import { ElMessage } from 'element-plus/lib/components/message'
+import { ElMessage } from 'element-plus'
 import { getToken } from './auth';
 
 interface axiosData {

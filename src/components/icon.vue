@@ -42,7 +42,9 @@ export default defineComponent({
         'icon-ts',
         'icon-nestjs',
         'icon-websocket',
-        'icon-web'
+        'icon-web',
+        'icon-deploy',
+        'icon-pit'
       ],
       data: [''],
       key: ''
