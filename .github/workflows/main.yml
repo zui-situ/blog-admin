@@ -24,8 +24,8 @@ jobs:
       - name: Deploy
         uses: appleboy/scp-action@v0.1.2
         with:
-          host: '43.138.181.67' # 云服务器的公网地址
-          username: ${{ secrets.USERNAME }} # 云服务器的登录用户名
+          host: ${{ secrets.HOST }} # 云服务器的公网地址
+          username: 'root' # 云服务器的登录用户名
           password: ${{ secrets.PASSWORD }} # 云服务器的登录密码
           port: ${{ secrets.PORT }} # 云服务器的端口
           source: 'dist/' # 这是要复制到云服务器的文件夹名称
