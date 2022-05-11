@@ -61,7 +61,6 @@
     "lodash": "^4.17.21",
     "marked": "^2.0.7",
     "md-editor-v3": "^1.10.2",
-    "mockjs": "^1.1.0",
     "nprogress": "^0.2.0",
     "path": "^0.12.7",
     "path-to-regexp": "^6.2.0",

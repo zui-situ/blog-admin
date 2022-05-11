@@ -96,6 +96,7 @@ const handleAvatarSuccess: UploadProps['onSuccess'] = (response: any, uploadFile
 }
 
 const beforeAvatarUpload: UploadProps['beforeUpload'] = (rawFile: any) => {
+  console.log(rawFile)
   if (rawFile.size / 1024 / 1024 > 2) {
     ElMessage.error('Avatar picture size can not exceed 2MB!')
     return false

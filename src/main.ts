@@ -22,7 +22,7 @@ import 'element-plus/theme-chalk/index.css';
 // If you want to use ElMessage, import it.
 import "element-plus/theme-chalk/src/message.scss"
 
-import '@/mock'
+// import '@/mock'
 
 // const roles =  localStorage.getItem('role');
 
