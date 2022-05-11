@@ -24,7 +24,7 @@ jobs:
       - name: Deploy
         uses: appleboy/scp-action@v0.1.2
         with:
-          host: ${{ secrets.HOST }} # 云服务器的公网地址
+          host: '43.138.181.67' # 云服务器的公网地址
           username: ${{ secrets.USERNAME }} # 云服务器的登录用户名
           password: ${{ secrets.PASSWORD }} # 云服务器的登录密码
           port: 22 # 云服务器的端口
