@@ -28,5 +28,5 @@ jobs:
           username: ${{ secrets.USERNAME }} # 云服务器的登录用户名
           password: ${{ secrets.PASSWORD }} # 云服务器的登录密码
           port: ${{ secrets.PORT }} # 云服务器的端口
-          source: 'dist/' # 这是要复制到云服务器的文件夹名称
+          source: 'dist' # 这是要复制到云服务器的文件夹名称
           target: '/data/admin-dist' # # 打包后的 dist 文件夹将放在 云服务器的文件位置
