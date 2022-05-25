@@ -108,7 +108,7 @@ const getList = (): void => {
     loading.value = false
     if (res.code === 200) {
       state.tableData = res.data.list
-      page.total = res.data.count
+      page.total = res.data.pagination.count
     }
   })
 }
